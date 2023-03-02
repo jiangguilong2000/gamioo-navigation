@@ -1,7 +1,7 @@
-[![build](https://github.com/jiangguilong2000/gamioo-path/actions/workflows/gradle.yml/badge.svg)](https://github.com/jiangguilong2000/gamioo-path/actions/workflows/gradle.yml)
-[![codecov](https://codecov.io/gh/jiangguilong2000/gamioo-path/branch/master/graph/badge.svg?token=IDKS3W3KA2)](https://codecov.io/gh/jiangguilong2000/gamioo-path)
-[![GitHub release](https://img.shields.io/github/release/jiangguilong2000/gamioo-path.svg)](https://github.com/jiangguilong2000/gamioo-path/releases)
-[![GitHub last commit](https://img.shields.io/github/last-commit/jiangguilong2000/gamioo-path.svg?style=flat-square)](https://github.com/jiangguilong2000/gamioo-path/commits)
+[![build](https://github.com/jiangguilong2000/gamioo-navigation/actions/workflows/gradle.yml/badge.svg)](https://github.com/jiangguilong2000/gamioo-navigation/actions/workflows/gradle.yml)
+[![codecov](https://codecov.io/gh/jiangguilong2000/gamioo-navigation/branch/master/graph/badge.svg?token=IDKS3W3KA2)](https://codecov.io/gh/jiangguilong2000/gamioo-navigation)
+[![GitHub release](https://img.shields.io/github/release/jiangguilong2000/gamioo-navigation.svg)](https://github.com/jiangguilong2000/gamioo-navigation/releases)
+[![GitHub last commit](https://img.shields.io/github/last-commit/jiangguilong2000/gamioo-navigation.svg?style=flat-square)](https://github.com/jiangguilong2000/gamioo-navigation/commits)
 [![JDK](https://img.shields.io/badge/JDK-1.8%2B-green.svg)](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 [![license](https://img.shields.io/badge/license-MulanPSL-blue)](http://license.coscl.org.cn/MulanPSL)
 
@@ -20,7 +20,7 @@
 ```java
 class Main {
     public static void main(String[] args) {
-        Nav3D nav = new Nav3D();
+      NavEngine nav = new NavEngine();
         nav.init(1, "solo_navmesh.bin");
         float[] src = new float[]{-49.7f, 0.2f, 135.5f};
         float[] end = new float[]{-106.3f, 0.5f, 77.2f};
@@ -42,13 +42,13 @@ class Main {
 #### 📄 性能测试结果如下：
 
 ```bash
-Benchmark                          Mode  Cnt        Score        Error  Units
-Nav3DBenchMark.javaFind           thrpt   10    29041.379 ±   3533.518  ops/s
-Nav3DBenchMark.javaFindNearest    thrpt   10   378896.723 ±  11042.408  ops/s
-Nav3DBenchMark.javaRaycast        thrpt   10   265938.565 ±  53333.365  ops/s
-Nav3DBenchMark.nativeFind         thrpt   10    60053.551 ±   8232.497  ops/s
-Nav3DBenchMark.nativeFindNearest  thrpt   10  1046594.742 ± 100233.360  ops/s
-Nav3DBenchMark.nativeRaycast      thrpt   10   850461.285 ±  34866.953  ops/s
+Benchmark                              Mode  Cnt        Score        Error  Units
+NavEngineBenchMark.javaFind           thrpt   10    23907.038 ±   3651.774  ops/s
+NavEngineBenchMark.javaFindNearest    thrpt   10   308210.438 ± 169221.381  ops/s
+NavEngineBenchMark.javaRaycast        thrpt   10   268622.498 ±  45903.743  ops/s
+NavEngineBenchMark.nativeFind         thrpt   10    55728.163 ±  12648.708  ops/s
+NavEngineBenchMark.nativeFindNearest  thrpt   10  1016350.479 ± 201328.309  ops/s
+NavEngineBenchMark.nativeRaycast      thrpt   10   692069.731 ± 237797.318  ops/s
 ```
 
 在Windows下(4核8线程 Intel Core i7),很明显，
