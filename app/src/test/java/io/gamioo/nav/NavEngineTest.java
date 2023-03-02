@@ -1,7 +1,7 @@
-package io.gamioo.path;
+package io.gamioo.nav;
 
 import com.github.silencesu.Easy3dNav.Easy3dNav;
-import io.gamioo.path.util.FileUtils;
+import io.gamioo.nav.util.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.*;
@@ -12,9 +12,9 @@ import java.util.List;
 
 @DisplayName("Recast native test")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class Nav3DTest {
-    private static final Logger logger = LogManager.getLogger(Nav3DTest.class);
-    private static Nav3D nav;
+public class NavEngineTest {
+    private static final Logger logger = LogManager.getLogger(NavEngineTest.class);
+    private static NavEngine nav;
 
     private static Easy3dNav easyNav = new Easy3dNav();
     private static String navFilePath = "solo_navmesh.bin";
@@ -31,7 +31,7 @@ public class Nav3DTest {
 
     @BeforeAll
     public static void beforeAll() throws IOException {
-        nav = new Nav3D();
+        nav = new NavEngine();
         id = 1;
         nav.init(id, navFilePath);
         //初始化寻路对象

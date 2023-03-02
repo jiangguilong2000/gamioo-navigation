@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package io.gamioo.path.util;
+package io.gamioo.nav.util;
 
 import java.util.ArrayList;
 import java.util.Collections;

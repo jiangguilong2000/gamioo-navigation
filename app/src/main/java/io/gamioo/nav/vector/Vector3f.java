@@ -1,4 +1,4 @@
-package io.gamioo.path.vector;
+package io.gamioo.nav.vector;
 
 /**
  * 向量

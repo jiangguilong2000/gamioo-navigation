@@ -1,4 +1,4 @@
-package io.gamioo.path.util;
+package io.gamioo.nav.util;
 
 
 import org.apache.commons.lang3.SystemUtils;

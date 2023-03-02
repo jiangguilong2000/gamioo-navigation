@@ -1,4 +1,4 @@
-package io.gamioo.path.util;
+package io.gamioo.nav.util;
 
 import org.apache.commons.io.Charsets;
 import org.apache.commons.io.IOUtils;

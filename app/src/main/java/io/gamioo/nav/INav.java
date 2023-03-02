@@ -1,6 +1,6 @@
-package io.gamioo.path;
+package io.gamioo.nav;
 
-import io.gamioo.path.vector.Vector3f;
+import io.gamioo.nav.vector.Vector3f;
 
 import java.util.List;
 

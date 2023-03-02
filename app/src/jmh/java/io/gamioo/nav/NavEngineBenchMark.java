@@ -1,8 +1,8 @@
-package io.gamioo.path;
+package io.gamioo.nav;
 
 
 import com.github.silencesu.Easy3dNav.Easy3dNav;
-import io.gamioo.path.util.FileUtils;
+import io.gamioo.nav.util.FileUtils;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
@@ -19,13 +19,13 @@ import java.util.concurrent.TimeUnit;
  */
 @State(Scope.Benchmark)
 @Fork(value = 1)
-public class Nav3DBenchMark {
+public class NavEngineBenchMark {
     /**
      * Benchmark                Mode  Cnt       Score      Error  Units
      * Nav3DBenchMark.find     thrpt   10  248280.038 ± 1460.364  ops/s
      * Nav3DBenchMark.raycast  thrpt   10  816733.804 ± 9337.084  ops/s
      */
-    private Nav3D nav;
+    private NavEngine nav;
     public static int id;
     float[] src = new float[]{-112.082f, 0.359222f, 55.5665f};
     float[] end = new float[]{-49.0154f, 0.0922241f, 104.259f};
@@ -40,7 +40,7 @@ public class Nav3DBenchMark {
 
     @Setup(Level.Trial)
     public void init() throws IOException {
-        nav = new Nav3D();
+        nav = new NavEngine();
         id = 1;
         nav.init(id, navFilePath);
         //初始化寻路对象
@@ -113,7 +113,7 @@ public class Nav3DBenchMark {
 
     public static void main(String[] args) {
         Options opt = new OptionsBuilder()
-                .include(Nav3DBenchMark.class.getSimpleName())
+                .include(NavEngineBenchMark.class.getSimpleName())
                 .build();
 
         try {

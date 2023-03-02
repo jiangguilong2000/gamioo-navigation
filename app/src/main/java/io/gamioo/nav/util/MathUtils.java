@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.gamioo.path.util;
+package io.gamioo.nav.util;
 
-import io.gamioo.path.shape.Point;
+import io.gamioo.nav.shape.Point;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

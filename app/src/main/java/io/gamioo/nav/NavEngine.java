@@ -1,8 +1,8 @@
-package io.gamioo.path;
+package io.gamioo.nav;
 
-import io.gamioo.path.util.FileUtils;
-import io.gamioo.path.util.NativeUtils;
-import io.gamioo.path.vector.Vector3f;
+import io.gamioo.nav.util.FileUtils;
+import io.gamioo.nav.util.NativeUtils;
+import io.gamioo.nav.vector.Vector3f;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -17,8 +17,8 @@ import java.util.stream.Collectors;
  *
  * @author Allen Jiang
  */
-public class Nav3D implements INav {
-    private static final Logger logger = LogManager.getLogger(Nav3D.class);
+public class NavEngine implements INav {
+    private static final Logger logger = LogManager.getLogger(NavEngine.class);
     private int id;
     private float[] extents = {1.f, 1.f, 1.f};
 
