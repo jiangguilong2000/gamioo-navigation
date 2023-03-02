@@ -151,7 +151,9 @@ publishing {
 
 signing {
     //sign configurations.archives;
-    sign publishing.publications.mavenJava;
+    if (project.hasProperty("SIGNING")) {
+        sign publishing.publications.mavenJava;
+    }
 }
 
 dependencies {
