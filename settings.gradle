@@ -8,4 +8,4 @@
  */
 
 rootProject.name = 'gamioo-navigation'
-include('app')
+include('navigation')
