@@ -13,7 +13,6 @@
     * NavMesh
     * A<sup>*</sup>
 
-\gamioo-path\app\build\libs\app.jar 直接可以拿去使用
 <p align="center">
   <img src="https://img-blog.csdnimg.cn/c4f2795ea1974d57a90a987aa5bea463.png" width="800">
 </p>
