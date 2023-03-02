@@ -1,5 +1,5 @@
 [![build](https://github.com/jiangguilong2000/gamioo-navigation/actions/workflows/gradle.yml/badge.svg)](https://github.com/jiangguilong2000/gamioo-navigation/actions/workflows/gradle.yml)
-[![codecov](https://codecov.io/gh/jiangguilong2000/gamioo-navigation/branch/master/graph/badge.svg?token=IDKS3W3KA2)](https://codecov.io/gh/jiangguilong2000/gamioo-navigation)
+[![codecov](https://codecov.io/gh/jiangguilong2000/gamioo-navigation/branch/main/graph/badge.svg?token=QBSoQmUNnn)](https://codecov.io/gh/jiangguilong2000/gamioo-navigation)
 [![Gradle Package](https://github.com/jiangguilong2000/gamioo-navigation/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/jiangguilong2000/gamioo-navigation/actions/workflows/gradle-publish.yml)
 [![GitHub last commit](https://img.shields.io/github/last-commit/jiangguilong2000/gamioo-navigation.svg?style=flat-square)](https://github.com/jiangguilong2000/gamioo-navigation/commits)
 [![JDK](https://img.shields.io/badge/JDK-1.8%2B-green.svg)](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
