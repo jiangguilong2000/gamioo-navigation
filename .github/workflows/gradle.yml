@@ -43,6 +43,6 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{success()}}
     steps:
-      - run: echo "Build successfully on branch"
+      - run: echo "Build successfully on branch ${{ secrets.GITHUB_TOKEN }}"
 
 
